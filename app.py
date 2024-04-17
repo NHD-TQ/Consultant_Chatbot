@@ -16,7 +16,7 @@ for message in st.session_state.messages:
         st.write(message['content'])
 
 def clear_chat_history():
-    st.session_state.messages = [{"role": "assistant", "content": "How may I can assist you today ?"}]
+    st.session_state.messages = [{"role": "assistant", "content": "Chào mừng bạn đến với cửa hàng của chúng tôi ! Bạn cần tìm hiểu thông tin về sản phẩm nào trong cửa hàng ?"}]
 st.sidebar.button("Clear Chat History", on_click=clear_chat_history)
 
 # Create the LLM response generation function
