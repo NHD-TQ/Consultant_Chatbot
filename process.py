@@ -11,7 +11,7 @@ import os
 import pandas as pd
 
 # define api_key
-os.environ["OPENAI_API_KEY"] = ""
+os.environ["OPENAI_API_KEY"] = "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"
 
 # read data.
 df = pd.read_csv("data/data.csv")
