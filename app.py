@@ -1,5 +1,5 @@
 import streamlit as st
-# from process import bot
+from process import bot
 # App title
 st.set_page_config(page_title="🦙💬 Chatbot - Beta")
 
