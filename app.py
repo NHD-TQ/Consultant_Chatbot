@@ -13,7 +13,7 @@ import os
 import pandas as pd
 
 # define api_key
-os.environ["OPENAI_API_KEY"] = st.secrets['OPENAI_KEY']
+os.environ["OPENAI_API_KEY"] = st.secrets['OPENAI_API_KEY']
 
 # read data.
 df = pd.read_csv("data/data.csv")
