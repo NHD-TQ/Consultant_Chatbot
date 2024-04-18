@@ -1,4 +1,3 @@
-
 from llama_index.query_pipeline import (
     QueryPipeline as QP,
     Link,
