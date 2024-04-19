@@ -16,7 +16,7 @@ import pandas as pd
 os.environ["OPENAI_API_KEY"] = st.secrets['OPENAI_API_KEY']
 
 # read data.
-df = pd.read_csv("data/data.csv")
+df = pd.read_csv("data/data1.csv")
 
 # defile module.
 def bot(input):
