@@ -13,7 +13,7 @@ import os
 import pandas as pd
 
 # define api_key
-os.environ["OPENAI_API_KEY"] = st.secrets['OPENAI_API_KEY']
+# os.environ["OPENAI_API_KEY"] = st.secrets['OPENAI_API_KEY']
 
 # read data.
 df = pd.read_csv("data/data1.csv")
@@ -54,7 +54,7 @@ def bot(input):
     )
     pandas_output_parser = PandasInstructionParser(df)
     response_synthesis_prompt = PromptTemplate(response_synthesis_prompt_str)
-    llm = OpenAI(model="gpt-3.5-turbo")
+    llm = OpenAI(api_key=st.secrets["OPENAI_API_KEY"], model="gpt-3.5-turbo")
 
     # build query pipeline.
     qp = QP(
