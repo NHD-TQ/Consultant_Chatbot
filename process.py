@@ -51,7 +51,7 @@ def bot(input):
     )
     pandas_output_parser = PandasInstructionParser(df)
     response_synthesis_prompt = PromptTemplate(response_synthesis_prompt_str)
-    llm = OpenAI(model="gpt-4")
+    llm = OpenAI(model="gpt-3.5-turbo")
 
     # build query pipeline.
     qp = QP(
